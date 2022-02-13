@@ -89,9 +89,10 @@ nav ul li a:hover{
     width: 300px;
     height:330px;
     background-color: white;
-    position: absolute;
-    top: 60px;
-    right: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
@@ -274,7 +275,7 @@ span{
 /* Loja */
 
 .loja{
-    padding: 100px;
+    padding: 100px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +318,7 @@ span{
 /* Serviços */
 
 .servicos{
-    padding: 100px;
+    padding: 100px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,7 +326,7 @@ span{
 
 .servicosFlex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-flow: wrap;
     padding-bottom: 30px;
@@ -450,6 +451,9 @@ span{
 
 .contato{
     padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contatoFlex{
@@ -560,7 +564,7 @@ span{
         position: absolute;
         top: 5rem;
         right: 1px;
-        background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),royalblue;
+        background:#000;
         width: 100%;
         text-align: center;
     }
@@ -570,6 +574,7 @@ span{
     }
 
     .sobre{
+        padding: 100px 40px;
         flex-wrap:wrap ;
     }
 
@@ -597,6 +602,10 @@ span{
         object-fit: cover;
     }
 
+    .servicos{
+        margin-left: -20px;
+    }
+
     .servico1{
         width: 250px;
     }
@@ -607,5 +616,12 @@ span{
 
     .plano2 p{
         font-size: 15px;
+    }
+    
+}
+
+@media (max-width:320px){
+    header img{
+        margin-left: -60px;
     }
 }
