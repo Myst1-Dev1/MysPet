@@ -3,367 +3,388 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Pimgs/mpet.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Shizuru&family=Smooch&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="icon" href="./img/logo-myspets.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>MysPet</title>
 </head>
 <body>
 
-    <!-- Inicio -->
-  
-    <header>
-        <!-- <h1 class="titulo1"> <i class="fas fa-paw P"></i> SHOP</h1> -->
-        <img src="./Pimgs/mpet.png" alt="">
-        <nav id="menunav">
+    <section class="container py-2 header-contato">
+        <div class="contatos-header">
+            <p>Leave A Message: myspet@hotmail.com</p>
+            <div class="contato-header-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+        <div class="header-location py-3">
+            <div class="img-container">
+                <img src="./img/logo-myspets.png" alt="logo">
+            </div>
+
+                <div class="location1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="subtitles-location">
+                        <h6>Our Location</h6>
+                        <p>SO - Design Street, Texas</p>
+                    </div> 
+                <div class="location1">
+                        <i class="fa-solid fa-hourglass-empty"></i>
+                        <div class="subtitles-location">
+                            <h6>Mon - Sat</h6>
+                            <p>8 Am - 10 Pm</p>
+                        </div> 
+                <div class="location1">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                        <div class="subtitles-location">
+                        <h6>Call Us</h6>
+                        <p>(15) 4002-8922</p>
+                     </div>      
+        </div>
+    </section>
+
+    <header class="header">
+
+        <nav class="container navbar" id="navbar">
             <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#loja">Loja</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#plano">Plano</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#plain">Plan</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
 
-    <div class="icons1">
-      <i onclick="show()" class="fas fa-bars A C1" id="menu-btn"></i>
-      <i class="fas fa-shopping-cart A"></i>
-      <i onclick="ativar()" class="fas fa-user A"></i>
-    </div>
-
+        <i class="fa-solid fa-bars px-5" id="menu" onclick="showMenu()"></i>
     </header>
 
-  <section class="gato">
-
-    <form action="" class="sign" id="loginA">
-
-      <!-- Login -->
-     
-      <h2 class="entrar">Entrar</h2>
-
-      <div class="form1">
-      <input type="text" name="email" placeholder="Email">
-      <input type="password" name="senha" placeholder="Senha">
-    </div>
-
-    <input class="checkB" type="checkbox">
-    <label>Lembre de min</label>
-    <button class="btn2">Entrar</button>
-    <div class="login2">
-      <p>Esqueceu a senha?</p>
-      <p>Criar Conta</p>
-      
-    </div>
-    </form>
-
-    <!-- Bem vindo ao nosso PetShop -->
-
-      <div class="info1">
-      <h2 class="subtitu1"> <span> Olá </span>, Bem Vindo <br> ao nosso PetShop</h2>
-      <button class="btn1"> <a href="#"> Compre Agora </a></button>
-    </div>
-  </section>
-
-  <!-- Sobre -->
-
-  <section class="sobre" id="sobre">
-
-    <div class="sobre2">
-      <h2><span>Vamos Cuidar</span> <br> dos Animais </h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    </div>
-
-    <img src="./Pimgs/gacremoved.png" alt="gato">
-
-  </section>
-
-
-  <!-- Loja -->
-
-  <section class="loja" id="loja">
-
-    <div class="produtoFlex">
-
-      <div class="produto1">
-        <div class="img-container">
-        <img src="./Pimgs/whisk.png" alt="whiskas">
-        </div>
-        <h2> <span>Whiskas</span> </h2>
-        <p>  R$:15,00 - R$30,00</p>
-      </div>
-
-
-      <div class="produto1">
-        <div class="img-container">
-        <img src="./Pimgs/pedigree.png" alt="pedigree">
-        </div>
-        <h2> <span>Pedigree</span> </h2>
-        <p> R$:15,00 - R$30,00</p>
-      </div>
-
-
-      <div class="produto1">
-        <div class="img-container">
-        <img src="./Pimgs/kiara.png" alt="kiara">
-        </div>
-        <h2> <span>Kiara</span> </h2>
-        <p>  R$:15,00 - R$30,00</p>
-      </div>
-
-
-      <!--  -->    
-    </div>
-
-    <div class="produtoflex2">
-
-      <div class="produto1">
-        <div class="img-container">
-        <img src="./Pimgs/rc2.png" alt="coby">
-        </div>
-        <h2> <span>Coby</span> </h2>
-        <p> R$:15,00 - R$30,00</p>
-      </div>
-
-
-      <div class="produto1">
-        <div class="img-container">
-        <img src="./Pimgs/scat.png" alt="scat">
-        </div>
-        <h2> <span>Special Cat</span> </h2>
-        <p> R$:15,00 - R$30,00</p>
-      </div>
-
-
-      <div class="produto1">
-        <div class="img-container">
-        <img src="./Pimgs/gp.png" alt="gp">
-        </div>
-        <h2> <span>Gran Plus</span> </h2>
-        <p> R$:15,00 - R$30,00</p>
-      </div>
-
-    </div>
-
-  </section>
-
- 
-
-  <!-- Serviços -->
-
-  <section class="servicos" id="servicos">
-
-    <div class="servicosFlex">
-
-      <div class="servico1">
-        <i class="fas fa-dog D"></i>
-        <h2>Embarque De Cão</h2>
-        <button class="btnS">Saiba Mais</button>
-      </div>
-
-
-      <div class="servico1">
-        <i class="fas fa-cat D"></i>
-        <h2>Embarque De Gato</h2>
-        <button class="btnS">Saiba Mais</button>
-      </div>
-
-
-      <div class="servico1">
-        <i class="fas fa-bath D"></i>
-        <h2>Banho</h2>
-        <button class="btnS">Saiba Mais</button>
-      </div>
-
-
-      <div class="servico1">
-        <i class="fas fa-drumstick-bite D"></i>
-        <h2> carne saudavel</h2>
-        <button class="btnS">Saiba Mais</button>
-      </div>
-
-      <div class="servico1">
-        <i class="fas fa-baseball-ball D"></i>
-        <h2>Exercicios</h2>
-        <button class="btnS">Saiba Mais</button>
-      </div>
-
-      <div class="servico1">
-        <i class="fas fa-heartbeat D"></i>
-        <h2>Assistência Médica</h2>
-        <button class="btnS">Saiba Mais</button>
-      </div>
-      
-    </div>
-
-  </section>
-
-
-  <!-- Plano -->
-
-    <section class="plano" id="plano">
-
-      <div class="planoFlex">
-
-      <div class="plano1">
-        <h2>Cuidado de Animais</h2>
-        <h3>1 Dia</h3>
-        <i class="fas fa-bicycle E"></i>
-        <div class="planos">
-
-          <div class="plano2">
-            <p>Quarto</p>
-            <i class="fas fa-check F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Atendimento Médico</p>
-            <i class="fas fa-check F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Alimentação</p>
-            <i class="fas fa-times F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Exercicio</p>
-            <i class="fas fa-times F"></i>
-          </div>
+    <section class="banner">
+        <div class="container banner-content">
+            <h1>Dog Cat Pet Care</h1>
+            <h2>We Take Good Care For <br> Your Lovely Pet</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                 Lorem Ipsum has been the industry's standard dummy</p>
+                <button class="btn">Learn More</button>
 
         </div>
-
-        <h2>R$ 50,00</h2>
-
-        <button class="btnP">Selecione o Plano</button>
-      </div>
+    </section>
 
 
-
-
-      <div class="plano1">
-        <h2>Cuidado de Animais</h2>
-        <h3>10 Dias</h3>
-        <i class="fas fa-motorcycle E"></i>
-        <div class="planos">
-
-          <div class="plano2">
-            <p>Quarto</p>
-            <i class="fas fa-check F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Atendimento Médico</p>
-            <i class="fas fa-check F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Alimentação</p>
-            <i class="fas fa-check F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Exercicio</p>
-            <i class="fas fa-times F"></i>
-          </div>
-
+    <section class="container sobre" id="about">
+        <div class="sobre-subtitles text-center">
+            <h2>What we do</h2>
+            <p>Lorem ipsum is simply dummy text of the printing.</p>
         </div>
 
-        <h2>R$ 350,00</h2>
+        <div class="sobre-pets py-5">
 
-        <button class="btnP">Selecione o Plano</button>
-      </div>
+            <div class="sobre-pet1 mb-4">
+                <h4>Pet Wellness</h4>
+                <div class="img-container">
+                    <img src="./img/petwellness.jpg" alt="petwellness">
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy.</p>
+                  <button class="btn">Learn More</button>  
+            </div>
 
+            <div class="sobre-pet1 mb-4">
+                <h4>Foods For You Pet</h4>
+                <div class="img-container">
+                    <img src="./img/petfood.jpeg" alt="foodforpet">
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy.</p>
+                  <button class="btn">Learn More</button>  
+            </div>
 
-
-      <div class="plano1">
-        <h2>Cuidado de Animais</h2>
-        <h3>20 Dias</h3>
-        <i class="fas fa-car-side E"></i>
-        <div class="planos">
-
-          <div class="plano2">
-            <p>Quarto</p>
-            <i class="fas fa-check F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Atendimento Médico</p>
-            <i class="fas fa-check F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Alimentação</p>
-            <i class="fas fa-check F"></i>
-          </div>
-
-          <div class="plano2">
-            <p>Exercicio</p>
-            <i class="fas fa-check F"></i>
-          </div>
+            <div class="sobre-pet1 mb-4">
+                <h4>Pet Grooming</h4>
+                <div class="img-container">
+                    <img src="./img/petgrooming.jpg" alt="petgrooming">
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy.</p>
+                  <button class="btn">Learn More</button>  
+            </div>
 
         </div>
-
-        <h2>R$ 650,00</h2>
-
-        <button class="btnP">Selecione o Plano</button>
-      </div>
-
-    </div>
 
     </section>
 
 
-    <!-- Contato -->
+    <section class="container services" id="services">
 
-    <section class="contato" id="contato">
+        <h2>Our Services</h2>
 
-      <div class="contatoFlex">
-        <img class="imgC" src="./Pimgs/contatoimg.jpg" alt="contatoimagem">  
-      <div class="contatoForm">
-        <h2>Envie uma Mensagem </h2>
+        <div class="service-content py-3">
+            <div class="img-container">
+                <img src="./img/serviceimg.png" alt="service-img">
+            </div>
 
-        <form>
-        
-          <input type="text" name="nome" placeholder="Nome">
-          <input type="text" name="email" placeholder="Email">
-          <textarea name="Mensagem" placeholder="Mensagem"></textarea>
-         
-          <input type="submit" placeholder="Enviar">
+            <div class="pet-services py-5 mt-5">
 
-        </form>
-      </div>
-    </div>
+                <div class="pet-service1 mb-3">
+                    <i class="fa-solid fa-dog"></i>
+                   <p>Dog Boarding</p>    
+                </div> 
+                
+                <div class="pet-service1 mb-3">
+                    <i class="fa-solid fa-cat"></i>
+                   <p>Cat Boarding</p>    
+                </div> 
+
+                <div class="pet-service1 mb-3">
+                    <i class="fa-solid fa-baseball"></i>
+                   <p>Pet Exercises</p>    
+                </div> 
+
+                <div class="pet-service1 mb-3">
+                    <i class="fa-solid fa-drumstick-bite"></i>
+                   <p>Healthy Meat</p>    
+                </div> 
+
+                <div class="pet-service1 mb-3">
+                    <i class="fa-solid fa-bath"></i>
+                   <p>Spa & Grooming</p>    
+                </div> 
+
+                <div class="pet-service1">
+                    <i class="fa-solid fa-briefcase-medical"></i>
+                   <p>Healthy Care</p>    
+                </div> 
+
+                <div class="d-flex justify-content-center align-items-center">
+                <button class="btn mt-5">Learn More</button>
+                    </div>
+
+            </div> 
+            </div>     
+
+        </div>
     </section>
 
 
-    <!-- Fim -->
+    <section class="container shop" id="shop">
+        <h2>Shop</h2>
 
-    <footer class="fim">
+        <div class="produtoFlex py-5">
 
-      <p>@ 2022 Feito por <a href="https://myst1-dev1.github.io/Myst1-Dev/"> Myst1 Dev </a>  <br>
-         Todos os Direitos Reservados.
-         
-      </p>
+            <div class="produto1 mb-3"> 
+                <div class="img-container">
+                    <img src="./img/whisk.png" alt="">
+                </div>
+                <h3>Whiskas</h3>
+                <h4>$:14,60</h4>
+            </div>
 
+            <div class="produto1 mb-3"> 
+                <div class="img-container">
+                    <img src="./img/rc2.png" alt="">
+                </div>
+                <h3>Coby</h3>
+                <h4>$:15,00</h4>
+            </div>
+
+            <div class="produto1 mb-3"> 
+                <div class="img-container">
+                    <img src="./img/ball-la.png" alt="">
+                </div>
+                <h3>Ball Of Wool</h3>
+                <h4>$:8,20</h4>
+            </div>
+
+        </div>
+
+        <div class="produtoFlex">
+
+            <div class="produto1 mb-3"> 
+                <div class="img-container">
+                    <img src="./img/catclothes.png" alt="">
+                </div>
+                <h3>Cat Clothes</h3>
+                <h4>$:32,50</h4>
+            </div>
+
+            <div class="produto1 mb-3"> 
+                <div class="img-container">
+                    <img src="./img/dogclothes.png" alt="">
+                </div>
+                <h3>Dog Clothes</h3>
+                <h4>$:35,00</h4>
+            </div>
+
+            <div class="produto1 mb-3"> 
+                <div class="img-container">
+                    <img src="./img/dogtoy1.png" alt="">
+                </div>
+                <h3>Bone Dog Toy</h3>
+                <h4>$:12,80</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <section class="container plain" id="plain">
+        <h2>Plan</h2>
+
+        <div class="plainFlex">
+
+        <div class="plain1 py-5">
+            <div class="subtitles-plain d-flex flex-column">
+            <h3>Animal Care</h3>
+            <h4>One Day</h4>
+        </div>
+        <i class="fa-solid fa-bicycle mb-4"></i>
+        <div class="plain-services py-1">
+            <h5>Bedroom</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>Medical care</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>food</h5>
+            <i class="fa-solid fa-close"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>Exercise</h5>
+            <i class="fa-solid fa-close"></i>
+        </div>
+            <h3 class="text-center mt-2">$:50,00</h3>
+
+            <div class="d-flex justify-content-center align-items-center">
+            <button class="btn mt-4">Select The Plan</button> 
+                </div>
+        </div>
+
+        <!--  -->
+
+        <div class="plain1 py-5">
+            <div class="subtitles-plain d-flex flex-column">
+            <h3>Animal Care</h3>
+            <h4>Ten Days</h4>
+        </div>
+        <i class="fa-solid fa-motorcycle mb-4"></i>
+        <div class="plain-services py-1">
+            <h5>Bedroom</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>Medical care</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>food</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>Exercise</h5>
+            <i class="fa-solid fa-close"></i>
+        </div>
+            <h3 class="text-center mt-2">$:50,00</h3>
+
+            <div class="d-flex justify-content-center align-items-center">
+            <button class="btn mt-4">Select The Plan</button> 
+                </div>
+        </div>
+
+
+        <!--  -->
+
+
+        <div class="plain1 py-5">
+            <div class="subtitles-plain d-flex flex-column">
+            <h3>Animal Care</h3>
+            <h4>Twenty Days</h4>
+        </div>
+        <i class="fa-solid fa-car-side mb-4"></i>
+        <div class="plain-services py-1">
+            <h5>Bedroom</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>Medical care</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>food</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="plain-services py-1">
+            <h5>Exercise</h5>
+            <i class="fa-solid fa-check"></i>
+        </div>
+            <h3 class="text-center mt-2">$:50,00</h3>
+
+            <div class="d-flex justify-content-center align-items-center">
+            <button class="btn mt-4">Select The Plan</button> 
+                </div>
+        </div>
+</div>
+    </section>
+    
+    <!--  -->
+
+    <section class="contato container" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contatoFlex py-5">
+
+                <div class="img-container">
+                    <img src="./img/contatoimg.jpg" alt="">
+            </div>
+
+            <form class="contato-form">
+                <h2>Send Us A <br> Message</h2>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea cols="30" rows="5" placeholder="Message"></textarea>
+                <button class="btn mb-3">Send</button>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- end -->
+
+    <footer class="end d-flex justify-content-center align-items-center text-center text-light">
+        <p class="pt-3">@2022 Feito por <a href="">Myst1 Dev</a> Todos os direitos reservados</p>
     </footer>
 
 
-  <!--  -->
 
-  <script type="text/javascript">
-    window.addEventListener('scroll', function() {
-     const header = document.querySelector('header');
-     header.classList.toggle("sticky", window.scrollY > 0);
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+    $(document).ready(function(){
+    $("#menu").click(function(){
+      $(this).toggleClass("fa-times");
+      $(".navbar").toggleClass("nav-toggle");
     });
+});
 
     </script>
 
-  
 </body>
 </html>
