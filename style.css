@@ -1,299 +1,300 @@
 *{
-    margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: calc(60% + 0.8vmin);
 }
 
 body{
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),royalblue;
+    background-color: rgba(196, 168, 168, 0.219);
 }
 
-/* Inicio */
+/* header */
 
-header{
-    font-family: poppins;
-    color: aliceblue;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10000;
+.contatos-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contatos-header p{
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contato-header-icons i{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    background: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+.contato-header-icons i:hover{
+    background-color: red;
+}
+
+.header-location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-location .img-container{
+    width: 150px;
+}
+
+.header-location .img-container img{
     width: 100%;
+    object-fit: cover;
+}
+
+.location1{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: 1s;
-    flex-flow: wrap;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
-header img{
-    width: 90px;
-    height: 90px;
-}
-
-.titulo1{
+.location1 i{
+    color: white;
     font-size: 30px;
-    font-weight: 300;
+    padding: 0 15px;
+    -webkit-text-stroke: 2px black;
 }
 
-.P{
-    color: chocolate;
+.subtitles-location{
+    font-family: 'Poppins',sans-serif;
 }
 
-nav ul{
+/* menu */
+
+.header{
+    background-color: royalblue;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    list-style: none;
-    /* flex-flow:wrap; */
     transition: 1s;
 }
 
 .sticky {
     position: fixed;
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
-    padding: 1px 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    transition: 1s;
-}
+    top: 0;
+    width: 100%;
+    background-color: rgb(13, 13, 46);
+    z-index: 100;
+    padding-bottom: 1px;
+    animation: Fade 2s ease;
+  }
 
-nav ul li a {
-    text-decoration: none;
-    color: aliceblue;
-    margin-left: 30px;
-    font-size: 20px;
-    transition: 1s;
-}
-
-nav ul li a:hover{
-    color: red;
-}
-
-.A{
-    transition: 1s;
-    padding-left: 10px;
-    font-size: 27px;
-}
-
-.C1{
-    display: none;
-}
-
-.A:hover{
-    color: red;
-}
-
-/* Login */
-
-.sign{
-    width: 300px;
-    height:330px;
-    background-color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
-    display: none;
-    animation:fadein 1s linear;
-}
-
-@keyframes fadein{
+@keyframes Fade{
     0%{
-        transform: translateY(0.2rem);
         opacity: 0;
     }
 }
 
-.entrar{
-    position: absolute;
-    top: 10px;
-    left: 100px;
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.form1{
+.navbar ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 20px;
+    margin: auto;
+    list-style: none;
+    padding: 10px;
 }
 
-.form1 input{
-    background-color: none;
-    border:none;
-    background: none;
-    margin-top: 30px;
-    width: 250px;
-    border-bottom: 1px solid black;
-}
-
-.form1 input::placeholder{
-    position: absolute;
-    top: -2px;
-    left: 10px;
-}
-
-.form1 input:focus{
-    outline: none;
-}
-
-.checkB{
-    margin-top: 170px;
-    margin-left: 50px;
-}
-
-.btn2{
-    position: absolute;
-    background-color: chocolate;
+.navbar ul li a{
+    text-decoration: none;
     color: aliceblue;
-    top: 210px;
-    left: 50px;
     font-size: 20px;
-    text-align: center;
-    width: 200px;
-    border-radius: 60px 0 0 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    cursor: pointer;
+    font-family: poppins;
+    margin-left: 40px;
     transition: 1s;
 }
 
-.btn2:hover{
-    background-color: red;
-}
-
-.login2{
-    margin-top: 80px;
-    margin-left: 20px;
-    display: flex;
-}
-
-.login2 p {
-    font-size: 15px;
-    color: chocolate;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.login2 p:hover{
+.navbar ul li a:hover{
     color: red;
 }
 
-/* Bem vindo ao nosso PetShop */
+.header i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
 
-.gato{
-    background-image: url(Pimgs/gc.jpg);
-    background-repeat: no-repeat;
+/* banner */
+
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url(./img/fundo4.jpg);
+    background-size: cover;
     width: 100%;
     min-height: 100vh;
-    background-size: cover;
-    font-family: poppins;
+    color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.info1{
-   padding-left: 100px;
-}
-
-.subtitu1{
-    color: aliceblue;
     text-align: center;
-    font-size: 40px;
-    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
 }
 
-span{
-    color: chocolate;
+.banner-content{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
 }
 
-.btn1{
-    background: none;
-    background-color: chocolate;
-    font-size: 22px;
-    margin-top: 20px;
-    margin-left: 50px;
-    border: 1px solid white;
+.banner-content h1 {
+    font-size: 35px;
+    font-family: 'Bellota', sans-serif;
+    color: royalblue;
+    text-shadow: 1px 3px 10px black;
+    font-weight: 400;
+}
+
+.banner-content p{
+    max-width: 400px;
+}
+
+.btn{
     padding: 10px;
-    border-radius: 60px 0 0 60px;
-    transition: 1s;
-}
-
-.btn1 a{
-    text-decoration: none;
     color: aliceblue;
+    font-weight: bold;
+    background-color: royalblue;
+    border-radius: 5px;
+    transition: 1s;
+    font-size: 18px;
+    box-shadow: 0 0 40px royalblue;
+    width: 200px;
 }
 
-.btn1:hover{
+.btn:hover{
     background-color: red;
-    letter-spacing: 3px;
 }
 
 /* Sobre */
 
 .sobre{
-    padding: 100px;
+    padding: 80px 20px;
+}
+
+.sobre-subtitles{
+    font-family: 'Poppins', sans-serif;
+}
+
+.sobre-subtitles h2{
+    font-family: 'Bellota', sans-serif;
+    border-bottom: 1px solid black;
+    font-size: 35px;
+}
+
+.sobre-pets{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobre-pet1{
+    width: 350px;
+    padding:30px 20px;
+    border: 1px solid black;
+    font-family:'Poppins' ,sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    letter-spacing: 2px;
+    background-color: white;
 }
 
-.sobre2{
+.sobre-pet1 .img-container{
+    width: 300px;
+    height: 200px;
+}
+
+.sobre-pet1 .img-container img{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.sobre2{
-    color: aliceblue;
-    font-family: poppins;
-    letter-spacing: 3px;
-    line-height: 30px;
+/* Service */
+
+.services{
+    padding: 80px 20px;
 }
 
-.sobre2 h2{
+.services h2{
+    font-family: 'Bellota', sans-serif;
     text-align: center;
-    font-weight: 300;
-    padding-bottom: 20px;
+    font-size: 35px;
 }
 
-.sobre2 p{
-    max-width: 550px;
+.service-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.sobre img{
+.service-content .img-container{
+    width: 350px;
+    height: 350px;
+}
+
+.service-content img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.pet-services{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 10px 30px;
+    border-radius: 10px 10px 45px 45px;
+}
 
-/* Loja */
-
-.loja{
-    padding: 80px 40px;
+.pet-service1{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pet-service1 i{
+    font-size: 30px;
+}
+
+/* Shop */
+
+.shop{
+    padding: 80px 20px;
+}
+
+.shop h2{
+    font-family: 'Bellota', sans-serif;
+    text-align: center;
+    font-size: 35px;
 }
 
 .produtoFlex{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.produtoflex2{
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -301,361 +302,263 @@ span{
 }
 
 .produto1{
-    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),cornflowerblue;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #fff2;
-}
-
-.produto1:hover{
-    background-color: #ae4586;
-}
-
-.produto1 span{
-    color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    width: 350px;
+    border-radius:10px;
 }
 
 .produto1 .img-container{
-    position: relative;
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
 }
 
 .produto1 .img-container img{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
-.produto1 p{
-    color: aliceblue;
-    font-size: 20px;
+/* Plain */
+
+.plain{
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 0;
 }
-
-
-/* Serviços */
-
-.servicos{
-    padding: 100px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.servicosFlex{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: wrap;
-    padding-bottom: 30px;
-}
-
-.servico1{
-    background-color: #fff1;
-    width: 290px;
-    margin-left: 30px;
-    padding:20px;
-    margin-bottom: 30px;
-    border-radius: 10px 0 0 25px;
+.plain h2{
     text-align: center;
+    font-family: 'Bellota', sans-serif;
+    font-size: 35px;
+    margin-bottom: 40px;
 }
 
-.servico1 h2{
-    color: aliceblue;
-    font-family: poppins;
-    padding-bottom: 10px;
-    font-weight: 300;
-}
-
-.D{
-    color: aliceblue;
-    font-size: 70px;
-    padding-bottom: 10px;
-}
-
-
-.btnS{
-    background: none;
-    color: white;
-    background-color: chocolate;
-    font-size: 20px;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 60px 0 0 60px;
-    transition: 1s;
-    cursor: pointer;
-}
-
-.btnS:hover{
-    background-color: red;
-}
-
-/* Plano */
-
-.plano{
-    padding: 100px;
-    color: aliceblue;
-    font-family: poppins;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.planoFlex{
+.plainFlex{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-flow: wrap;
+    flex-wrap: wrap;
 }
 
-.plano1{
-    padding-bottom: 10px;
-    background-color: #fff1;
+.plain1{
+    background-color: white;
+    padding: 10px 30px;
     width: 350px;
-    padding: 40px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    border: 1px solid black;
+    margin-bottom: 20px;
 }
 
-.plano1 h2, h3{
+.subtitles-plain{
     text-align: center;
 }
 
-.plano1 h3{
-    font-size: 30px;
+.plain1 i{
+    font-size: 35px;
+    -webkit-text-stroke: 1px black;
+    color: royalblue;
 }
 
-.plano2{
+.plain-services{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    align-items: center;
 }
 
-.plano2 p {
-    font-size: 18px;
+.plain-services i{
+    font-size: 40px;
 }
 
-.E{
-    font-size: 50px;
-    color: chocolate;
-    padding-bottom: 20px;
-    -webkit-text-stroke: 2px #000;
-}
 
-.F{
-    color: aliceblue;
-    font-size: 30px;
-    -webkit-text-stroke: 2px #000;
-}
-
-.btnP{
-    background: none;
-    color: white;
-    background-color: chocolate;
-    font-size: 20px;
-    border: 1px solid white;
-    padding: 10px;
-    margin-top: 15px;
-    border-radius: 60px 0 0 60px;
-    transition: 1s;
-    cursor: pointer;
-}
-
-.btnP:hover{
-    background-color: red;
-}
-
-/* Contato */
+/*  */
 
 .contato{
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 80px 20px;
+}
+
+.contato h2{
+    text-align: center;
+    font-family: 'Bellota', sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
 }
 
 .contatoFlex{
     display: flex;
     justify-content: space-evenly;
-    flex-flow: wrap;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.contatoForm{
+.contatoFlex .img-container{
+    width: 450px;
+    height: 450px;
+}
+
+.contatoFlex .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contato-form{
+    background-color: white;
+    padding: 25px 10px;
+    border: 1px solid black;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:linear-gradient(150deg,darkblue,chocolate);
-    border: 1px solid whitesmoke;
-    padding: 25px;
 }
 
-.contatoForm h2{
-    color: aliceblue;
-    font-family: poppins;
-}
-
-.contatoForm input[type = "text"]{
+.contato-form input{
     display: block;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    width: 100%;
-    height: 35px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 250px;
     background: none;
-    border:none;
-    border-bottom: 1px solid white;
+    border: none;
+    border-bottom: 1px solid black;
 }
 
-.contatoForm input[type = "text"]::placeholder{
-    color: aliceblue;
+.contato-form input::placeholder{
+    color: black;
 }
 
-.contatoForm input[type = "submit"]{
-    color: aliceblue;
-    background-color: chocolate;
-    padding: 15px;
-    margin-top: 10px;
-    width: 120px;
-    height: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border:none;
-    border:1px solid white;
-    border-radius: 60px 0 0 60px;
-    border-radius: 10px;
-    transition: 1s;
-    cursor: pointer;
-}
-
-.contatoForm input[type = "submit"]:hover{
-    background-color: red;
-}
-
-.contatoForm input,textarea{
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.contatoForm textarea{
-    background: none;
-    border:none;
-    border-bottom: 1px solid white;
-    resize: none;
-    width: 100%;
-    height: 100px;
-}
-
-textarea::placeholder{
-    color: aliceblue;
-}
-
-.contatoForm input,textarea:focus{
+.contato-form input:focus{
     outline: none;
 }
 
-.imgC{
-    width: 40%;
-    height: 40%;
-    margin-bottom: 20px;
-    object-fit: cover;
+textarea{
+    resize: none;
+    width: 250px;
+    height: 150px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    color: black;
+    background: none;
+    margin-bottom: 40px;
 }
 
-/* Fim */
-
-.fim{
-    background-color: rgba(0,0,0,0.75);
-    width: 100%;
-    height: 100px;
-    border-top: 1px solid chocolate;
+textarea:focus{
+    outline: none;
 }
 
-.fim p{
-    text-align: center;
-    font-family: poppins;
-    color: aliceblue;
-    padding-top: 20px;
+textarea::placeholder{
+    color: black;
 }
 
-.fim a{
+/* End */
+
+.end{
+    background-color: darkblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.end a{
     text-decoration: none;
+    color: aliceblue;
+    transition: 1s;
+}
+
+.end a:hover{
     color: red;
 }
 
 
-@media (max-width:991px){
+@media (max-width:750px) {
 
-    header img{
-        margin-left: -80px;
-    }
-    
-    nav ul{
-        display: block;
-        margin-left: -50px;
-        position: absolute;
-        top: 5rem;
-        right: 1px;
-        background:#000;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav{
-        display: none;
-    }
-
-    .sobre{
-        padding: 100px 40px;
-        flex-wrap:wrap ;
-    }
-
-    .info1{
-        margin-left: -20px;
-    }
-
-    .plano1{
-        margin-left: -4px;
-    }
-
-    .C1{
-        display: block;
-        margin-left: 5px;
-    }
-
-    .icons1{
+    .header-location{
         display: flex;
-        margin-left: -46px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 280px;
     }
 
-    .imgC{
+    .header i{
+        display: block;
+        padding: 10px;
+    }
+    .location1{
+        padding: 0;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        background-color: rgb(13, 13, 46);
+        padding: 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: 1s;
     }
 
-    .servicos{
-        margin-left: -20px;
+    .nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
     }
 
-    .servico1{
+    .navbar ul{
+        display: block;
+    }
+
+    .navbar ul li a{
+        margin: 0;
+    }
+
+    .contatoFlex .img-container{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width:320px) {
+
+    .header-location{
+        width: 260px;
+    }
+    .location1{
+        padding: 0;
+    }
+
+    .sobre-pet1{
         width: 250px;
     }
 
-    .plano1{
+    .sobre-pet1 .img-container{
+        width: 220px;
+    }
+
+    .service-content .img-container{
+        width: 250px;
+        height: 250px;
+    }
+
+    .produto1{
+        width: 250px;
+    }
+
+    .plain1{
+        width: 250px;
+    }
+
+    .contato-form{
         width: 260px;
     }
 
-    .plano2 p{
-        font-size: 15px;
-    }
-    
-}
-
-@media (max-width:320px){
-    header img{
-        margin-left: -60px;
+    .contato-form input, textarea{
+        width: 200px;
     }
 }
