@@ -1,31 +1,15 @@
-// Login //
 
-function ativar() {
-    var x = document.getElementById("loginA");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+
+window.onscroll = function() {myFunction()};
+
+var header = document.querySelector(".header");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
     } else {
-      x.style.display = "none";
-    }
-  }
-
-
-  
-
-  // Menu //
-
-  
-
-  function show() {
-    var menu = document.getElementById("menunav");
-    // var menuclose = document.getElementById("menu-btn");
-
-
-    // menuclose.classList.toggle("fa-times")
-
-    if (menu.style.display === "none") {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
+      header.classList.remove("sticky");
     }
   }
