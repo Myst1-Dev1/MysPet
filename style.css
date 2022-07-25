@@ -135,7 +135,7 @@ body{
 
 .banner{
     background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url(./img/fundo4.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
     min-height: 100vh;
     color: aliceblue;
